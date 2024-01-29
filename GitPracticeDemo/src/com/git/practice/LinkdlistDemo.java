@@ -1,5 +1,6 @@
 package com.git.practice;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class LinkdlistDemo {
@@ -13,6 +14,11 @@ public class LinkdlistDemo {
 		System.out.println("Using foreach");
 		for (Integer in : l) {
 			System.out.println(in);
+		}
+		System.out.println("Using Itrator");
+		Iterator itr = l.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
 		}
 	}
 
